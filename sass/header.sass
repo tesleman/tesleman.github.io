@@ -1,0 +1,424 @@
+
+@import "fonts"
+@import "vars"
+@import "libs"
+@import "app/libs/owl.carousel/dist/assets/owl.carousel.min"
+
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	overflow-x: hidden
+	
+
+.hidden
+	display: none
+
+strong, b
+	font-family: "RobotoCondensedBold", sans-serif
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6,
+	font-family: "RobotoCondensedBold", sans-serif
+	text-transform: uppercase
+// .main-head
+// 	position: fixed
+// 	left: 0
+// 	right: 0
+.isnohome
+	
+	.top-pannel
+		background-color: $main-color
+		&::before
+			
+		
+	
+
+	.content
+		position: relative
+		padding-top: 160px
+
+
+.main-aside
+	.services-item
+		margin-bottom: 25px
+
+	.top-pannel-box 	
+		
+		h4 
+			font-size: 25px
+			margin-bottom: 25px	
+		li
+			
+			margin-top: 10px
+			margin-bottom: 15px
+			max-width: 100%
+			display: block
+			opacity: 1
+			border-bottom: 1px solid #f0f0f0
+			
+			a 
+				font-size: 15px
+				color: #111111
+				font-family: "RobotoRegular", sans-serif
+				display: block
+				text-transform: uppercase
+				.fa 
+					color: $accent-color
+
+
+
+
+
+.top-line 
+	background-color: $main-color
+	text-align: center
+	border-bottom: lighten($main-color, 6%) 1px solid 
+	position: relative
+	z-index: 2
+	ul, li 
+		list-style-type: none
+		padding: 0
+		margin: 0
+		position: relative
+	.sf-menu 
+		margin: 0 auto -6px
+		float: none
+		display: inline-block
+		font-family: "RobotoRegular", sans-serif
+		font-size: 15px
+		background-color: $main-color	
+		position: relative		
+		a 
+			border-left: none
+			border-top: none			
+		>li	
+			&.activ
+				background-color: darken($main-color, 3%)
+				color: $accent-color		
+			background-color: transparent 
+			
+			>a
+				color:#fff
+				padding: 25px 20px 25px
+				text-align: left
+				.fa
+					margin-left: 2px
+					font-size: 12px
+			&:hover
+				background-color: darken($main-color, 3%)
+				color: $accent-color
+				>a
+					color: $accent-color
+			ul 
+				li
+					background-color: $main-color
+					border-bottom: lighten($main-color, 5%) 1px solid
+					border-left: lighten($main-color, 5%) 1px solid
+					position: relative
+					z-index: 1
+					&:hover
+						>a
+							color: $accent-color	
+				a
+					text-align-last: left
+					color: #ffff 
+					padding: 10px	
+					position: relative
+					z-index: 1
+						
+//top panel
+.top-pannel 
+						
+	background-color: rgba(lighten($main-color, 2%), .8)
+	color: #fff
+	padding: 20px 0
+	position: absolute
+	width: 100%
+	z-index: 1
+	box-shadow: rgba(255,255,255,.03) 0 5px 0 5px
+	&-content
+		position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		background-image: url(../img/poligony-linii-grani-potop.jpg)
+		opacity: .16
+	&-box
+		h4
+			font-family: "RobotoRegular", sans-serif
+			font-size: 15px
+			margin-top: 0
+			position: relative
+			&::after
+				content: ''
+				height: 1px
+				width: 100%
+				background-color: $accent-color
+				position: absolute
+				left: 0
+				opacity: .4
+				bottom: -7px
+		ul, li
+			padding: 0
+			margin: 0
+			list-style-type: none
+		li
+			display: inline-block
+			vertical-align: top
+			max-width: 48%
+			opacity: 0.35
+			font-size: 13px
+			padding: 0 10px 0 30px
+			position: relative
+			&:only-child
+				max-width: 100%
+			.fa
+				font-size: 16px
+				position: absolute
+				left: 5px
+				top: 4px
+.text-left
+	text-align-last: left
+
+.text-right
+	text-align: right	
+.logo
+	img
+		max-width: 100%
+.top-phon
+	font-size: 18px
+	font-family: "RobotoRegular", sans-serif
+	span
+		font-size: 15px
+		opacity: .4
+.top-email
+	font-size: 14px
+	font-family: serif
+	a
+		color: #fff
+		text-decoration: underline	
+	span
+		opacity: .4 
+		
+.button
+	color: #222 
+	background-color: $accent-color
+	border-radius: 2px
+	font-size: 17px
+	padding: 15px 50px
+	position: relative	
+	transition: background-color .25s ease
+	font-family: "RobotoCondensedBold", sans-serif
+	&:hover
+		background-color: lighten($accent-color, 12%)
+	&:active
+		background-color: darken($accent-color, 12%)
+	&::after
+		position: absolute
+		content: ''
+		background-color: darken($accent-color, 10%)
+		width: 100%
+		bottom: 0
+		height: 3px
+		left: 0
+		border-bottom-right-radius: 2px
+		border-bottom-left-radius: 2px
+	&:hover, &:focus
+		text-decoration: none
+		color: #222
+	&-small	
+		font-family: "RobotoCondensedBold", sans-serif
+		padding: 9px 22px
+		font-size: 14px
+		&::after
+			height: 3px	
+.top-button
+	margin-top: 18px
+	
+
+		// .container
+		// 	position: absolute
+		// 	width: 100%
+		// .prev
+		// 	position: absolute
+		// .next
+		
+
+.slider-wrap
+	.slider-nav-container
+		position: relative
+	.slider-nav
+		position: absolute
+		width: 100%
+		z-index: 2
+		font-size: 36px
+		color: #ffffff
+		div
+			top: 300px
+			position: absolute
+			cursor: pointer
+			&:last-child
+				right: 0
+	.owl-dots			
+		position: absolute
+		width: 100%
+		cursor: pointer	
+		text-align: center
+		bottom: -550px
+		// top: 480px 
+		z-index: 2		
+		.owl-dot
+			display: inline-block
+			position: relative
+			width: 14px
+			height: 14px
+			background-color: darken($main-color, 10%)
+			border-radius: 10em
+			border: none
+			&.active
+				background-color: #FFCC00
+	.slide-wrap		
+		float: left
+		
+		// &.active
+		// 	h2				
+		// 		opacity: 1
+		// 		left: 0
+		// 	p	
+		// 		opacity: 1
+		// 		left: 0
+	// .slider
+	// 	left: 0
+	// 	
+.slider
+	// height: 100%
+	
+	width: 100%
+	overflow-x: hidden
+	top: 0
+	// max-width: 100%!important
+	// max-height: 100%!important	
+	.slide
+		margin-right: 0
+		color: #fff
+		padding-bottom: 70px
+		position: relative
+		padding-top: 130px
+		
+		
+		h2 		
+			
+			display: block
+			float: left
+			max-width: 100% !important
+			width: 100%	 !important
+			font-family: "RobotoCondensedLight", sans-serif
+			font-size: 48px
+			margin-top: 0
+			line-height: 52px
+			// left: 100px
+			position: relative
+			// opacity: 0
+			transition: all 1s ease
+			margin-bottom: 16px
+			&:first-line 
+				color: $accent-color
+		p 
+			display: block
+			
+			// left: 100px
+			position: relative
+			// opacity: 0
+			transition: all 1s ease
+			transition-delay: 0.25s
+			opacity: .75
+			font-family: "RobotoCondensedLight", sans-serif
+			margin-bottom: 40px
+			bottom: 0
+			
+		&-bg	
+			background-size: cover
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			
+			&::before
+				content: ''
+				background-color: $main-color
+				top: 0
+				left: 0
+				height: 100%
+				width: 100%
+				position: absolute
+				opacity: 0.85
+		&-content 
+			 
+			
+			position: relative
+			z-index: 1
+			padding-top: 80px
+			height: 377px 
+			.col-md-10
+				
+				margin-left: 70px
+
+				
+					
+
+.slide-img-wrap		
+	position: relative
+	padding-top: 12px
+	
+	img
+		display: block
+		max-height: 300px
+		max-width: 100%
+		
+		vertical-align: middle
+
+.sect-services
+	.col-md-3
+		padding: 0 3px	
+.sect-teaser
+	background-color: $main-color
+	color: #fff
+.teaser
+	&-item 	 
+		display: table-row
+		>div 
+			padding: 10px
+	&-coun
+		vertical-align: middle
+		display: table-cell	
+		&-wrap	
+			position: relative
+			width: 43px
+			height: 43px	
+		.fa::before
+			font-size: 48px
+			color: lighten($main-color , 10%)
+	&-number
+		position: absolute
+		text-align: center
+		top: 9px
+		width: 100%
+		font-size: 20px
+		font-family: "RobotoCondensedBold", sans-serif
+		color: $accent-color
+	&-text
+		padding-left: 15px
+		opacity: 0.28
+		font-family: "RobotoCondensedLight", serif
+		display: table-cell	
+

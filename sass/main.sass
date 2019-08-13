@@ -1,0 +1,243 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "header"
+@import "media"
+
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+
+
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.sect-services
+	background-color: rgba($accent-color, 0.82) 
+	padding-bottom: 20px
+
+.services-item
+	border: 5px lighten($main-color, 5%) solid
+	text-align: center
+	padding-bottom: 38px
+	margin-top: 15px
+	background-color: #fff
+	z-index: 2
+
+	&:hover
+		border-color: $accent-color
+		transition: all .5s ease
+		transform: scale(1.04)
+		box-shadow: rgba(0,0,0,.35)0 0 32px 
+		.services-item-image
+			.fa
+				opacity: .4
+			&::before
+				opacity: 0.7
+		.services-item-satrs
+			.fa
+				margin: 0 3px
+				color: $accent-color
+
+	&-satrs
+		font-size: 11px
+		color: #b4b4b4
+		.fa
+			margin-left: 1px
+			transition: .5s ease
+
+	h4			
+		font-size: 18px
+		
+		
+		
+	&-image
+		min-height: 192px
+		background-size: cover	
+		position: relative
+		.fa
+			font-size: 30px
+			color: #ffffff
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-top: -10px
+			margin-left: -10px
+			opacity: 0
+			
+
+		&::before	
+			position: absolute
+			content: ''
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0 
+			background-color: $main-color
+			opacity: 0
+	&-prise
+		margin-bottom: 26px
+		font-size: 19px
+		font-family: "RobotoCondensedBold", sans-serif	
+		span 
+			font-size: 25px	
+		.fa
+			color: $accent-color
+			font-size: 19px
+
+.sect-universal
+	background-color: #efefef
+	padding: 60px 0
+	background-size: cover
+	position: relative
+	&::before 
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		opacity: .85
+
+
+	h2
+		margin: 35px 0
+		
+		font-size: 42px
+		line-height: 40px
+.sect-news
+	background-image: url(../img/news-bg.jpg)
+	color: #ffffff
+	&::before
+		background-color: $main-color
+
+.new-item
+	background-color: #efefef
+	padding: 1px 1px 30px 1px
+	color: #111
+	text-align: center
+	margin: 10px 0
+	h4, p 
+		padding: 0 20px
+		font-family: "RobotoRegular", sans-serif
+	p 
+		font-size: 14px	
+		margin-bottom: 30px
+	h4	
+		padding-top: 20px
+	&-img
+		min-height: 180px
+		background-size: cover
+		
+.link-item	
+	display: block
+	padding: 14px
+	border: $accent-color 4px solid
+	background-color: #fff
+	color: #111111
+	margin-bottom: 15px
+	margin-top: 15px
+	text-decoration: none
+	&::after
+		clear: both
+		display: block
+		content: ''	
+	
+	.h4
+		text-decoration: underline
+		font-size: 15px
+		line-height: 18px
+		display: block	
+	&:hover
+		text-decoration: none
+		.h4
+			text-decoration: none
+
+
+	img 
+		display: block
+		width: 34px
+		height: auto
+		float: left
+		margin-right: 10px
+
+.main-foot
+	background-color: #282B2F
+	color: #ffffff
+	padding: 70px 0 
+	
+	.footer-abouth
+		opacity: .4
+		font-size: 13px
+		margin-top: 33px
+	.top-pannel-box 
+		margin-bottom: 30px
+		li
+			max-width: 100%
+			opacity: .6
+			margin-bottom: 12px
+			display: block
+			a 
+				color: #ffffff
+				opacity: .6				
+				.fa
+					top: 3px
+			.fa
+				opacity: .24
+
+
+.popup-form
+	position: relative
+	padding: 20px 30px
+	max-width: 320px
+	h3 
+		text-align: center
+		
+	label, input
+		display: block	
+		width: 100%
+	label
+		margin-bottom: 15px	
+		sapn 
+			14px
+	input
+		border: $accent-color 5px solid
+
+	.button
+		margin-top: 20px
+		margin-bottom: 10px
+		padding: 10px 35px
+
+.succes
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: #fff
+	text-align: center
+	z-index: 2
+	font-family: "RobotoCondensedBold", sans-serif
+	padding: 30px
+	text-transform: uppercase
+	
+	align-items: center
+	display: none
+	&.visible
+		display: flex
+
+
+
+
+@import "media" // Always at the end
+@import "app/libs/superfish/dist/css/superfish"
+@import "app/libs/font-awesome/scss/font-awesome"
+@import "/app/css/_magnific-custom.css"
+@import "../libs/magnific-popup/dist/magnific-popup.css"
