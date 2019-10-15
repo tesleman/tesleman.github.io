@@ -19,11 +19,13 @@ $(function() {
 		nav: true,		
 		navElement: false,
 		navText: [""],
-		// responsiveClass:true,
-		// autoHeight:true,
+	
 		dotsContainer:".owl-dots",
-		// responsiveClass: true,
-		// autoHeight:true,
+		autoplay:true,
+		autoplayTimeout:4000,
+		autoplaySpeed: true,
+		autoplaySpeed: 800,
+    autoplayHoverPause:true,
 		 responsive:
 		 {
 			0:{
@@ -78,10 +80,10 @@ $(function() {
 //   return false;
 // });
 
-$('.services-item h4').equalHeight();
+$('.services-item h4').equalHeights();
 	
 
-$('.new-item-text').equalHeight();
+$('.new-item-text').equalHeights();
 
 $('.h4').equalHeight();
 //E-mail Ajax Send

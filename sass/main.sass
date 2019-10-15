@@ -234,10 +234,54 @@ b, strong
 		display: flex
 
 
+.section-owerlay
+	position: relative	
+	background-size: cover
+	background-position: center
+	color: #ffffff
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		background-color: rgba($accent-color, 0.82)
+		opacity: .6
+.h2	
+	font-size: 30px
+	font-weight: 800
+	color: $accent
+	span 
+		color: #ffffff
+				
+.s
+	&-king, &-review, &-partners
+		padding: 5% 0		
+	&-call
+		background-size: cover
+
+		background-position: 20%
+		background-color: #2D2242
+
+		&::before
+			content: ''
+			width: 50%
+			right: 0
+			height: 100%
+			position: absolute
+			background-color: rgba($accent, .92)
+	
+.fotorama
+	&__thumb
+		&-border
+			border-color: #B72786
+	&__nav
+		&-wrap
+			position: absolute
+			width: 100%
+			padding: 0 30px
+			bottom: 24px
 
 
 @import "media" // Always at the end
-@import "app/libs/superfish/dist/css/superfish"
-@import "app/libs/font-awesome/scss/font-awesome"
-@import "/app/css/_magnific-custom.css"
-@import "../libs/magnific-popup/dist/magnific-popup.css"

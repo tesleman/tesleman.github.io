@@ -2,8 +2,6 @@
 @import "fonts"
 @import "vars"
 @import "libs"
-@import "app/libs/owl.carousel/dist/assets/owl.carousel.min"
-
 
 
 body
@@ -86,6 +84,7 @@ h1,h2,h3,h4,h5,h6,
 		margin: 0
 		position: relative
 	.sf-menu 
+		white-space: nowrap
 		margin: 0 auto -6px
 		float: none
 		display: inline-block
@@ -97,10 +96,12 @@ h1,h2,h3,h4,h5,h6,
 			border-left: none
 			border-top: none			
 		>li	
+			background-color: transparent
+			display: block
 			&.activ
 				background-color: darken($main-color, 3%)
 				color: $accent-color		
-			background-color: transparent 
+			 
 			
 			>a
 				color:#fff
@@ -116,6 +117,7 @@ h1,h2,h3,h4,h5,h6,
 					color: $accent-color
 			ul 
 				li
+					display: block
 					background-color: $main-color
 					border-bottom: lighten($main-color, 5%) 1px solid
 					border-left: lighten($main-color, 5%) 1px solid
@@ -422,3 +424,4 @@ h1,h2,h3,h4,h5,h6,
 		font-family: "RobotoCondensedLight", serif
 		display: table-cell	
 
+@import "media" // Always at the end
