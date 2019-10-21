@@ -21,11 +21,11 @@ $(function() {
 		navText: [""],
 	
 		dotsContainer:".owl-dots",
-		autoplay:true,
-		autoplayTimeout:4000,
-		autoplaySpeed: true,
-		autoplaySpeed: 800,
-    autoplayHoverPause:true,
+		// autoplay:true,
+		// autoplayTimeout:4000,
+		// autoplaySpeed: true,
+		// autoplaySpeed: 800,
+    // autoplayHoverPause:true,
 		 responsive:
 		 {
 			0:{
