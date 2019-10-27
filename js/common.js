@@ -21,11 +21,11 @@ $(function() {
 		navText: [""],
 	
 		dotsContainer:".owl-dots",
-		// autoplay:true,
-		// autoplayTimeout:4000,
-		// autoplaySpeed: true,
-		// autoplaySpeed: 800,
-    // autoplayHoverPause:true,
+		autoplay:true,
+		autoplayTimeout:4000,
+		autoplaySpeed: true,
+		autoplaySpeed: 800,
+    autoplayHoverPause:true,
 		 responsive:
 		 {
 			0:{
@@ -85,7 +85,7 @@ $('.services-item h4').equalHeights();
 
 $('.new-item-text').equalHeights();
 
-$('.h4').equalHeight();
+$('.h4').equalHeights();
 //E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
 	$('.callback').submit(function() { //Change
@@ -106,7 +106,33 @@ $('.h4').equalHeight();
 		return false;
 	});
 
-
+	$(".partner-slider").owlCarousel({
+		dots: false,
+		nav: false,
+		loop: true,
+		autoplay:true,
+		autoplayTimeout:4000,
+		autoplaySpeed: true,
+		autoplaySpeed: 800,
+    autoplayHoverPause:true,
+		smartSpeed: 700,
+		navText: ['<i class="fa fa-angle-double-left"></i>','<i class="fa fa-angle-double-right"></i>'],
+		responsiveClass: true,
+		responsive:{
+			0:{
+				items: 1
+			},
+			800:{
+				items: 2
+			},
+			1100:{
+				items: 3
+			}
+	
+		}
+	
+	
+	});
 
 	$('.popup-with-move-anim').magnificPopup({
 		type: 'inline',
